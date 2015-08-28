@@ -1,7 +1,10 @@
+// generates a serial with a 3 character product code at the start
+// example: product code "TST", serial TST1H-DFEON-47ZL4-MIWOO-3UIOS
+
 function GenerateSerial(productCode)
 {
 	var serialNum = productCode;
-    var charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    	var charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	var subsets = 5;
 	
 	for (var generations = 0; generations < subsets; generations++) {
